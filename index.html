@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Autolavado El Gato Espumoso</title>
+<meta name="description" content="Servicio profesional de autolavado: pulido, encerado y más.">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #FFD700;
+}
+
+/* 🔥 LOGO*/
+header img {
+    width: 200px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border: 4px solid #FFD700;
+    box-shadow: 0 0 20px #FFD700;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+h1 {
+    color: #FFD700;
+    font-size: 28px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    padding: 15px;
+}
+
+/* SERVICIOS */
+.servicios {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* 🔥 TU IMAGEN DE FONDO */
+.servicios::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    filter: brightness(0.5) contrast(1.2);
+}
+
+/* CONTENIDO ENCIMA */
+.servicios * {
+    position: relative;
+    z-index: 1;
+}
+
+.servicios h2 {
+    color: #FFD700;
+    text-align: center;
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 5px solid #FFD700;
+    border-radius: 10px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.icono {
+    color: #FFD700;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.whatsapp a {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* BOTÓN FLOTANTE */
+.btn-wsp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #25D366;
+    z-index: 1000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #FFD700;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- ✅ TU LOGO -->
+    <img src="logo.jpg" alt="Logo Autolavado">
+    <h1>Autolavado El Gato Espumoso</h1>
+</header>
+
+<div class="contenedor">
+
+    <div class="servicios">
+        <h2><i class="fa-solid fa-car"></i> Nuestros Servicios</h2>
+
+        <ul>
+            <li><i class="fa-solid fa-sparkles icono"></i> CERA GRATIS</li>
+            <li><i class="fa-solid fa-bottle-water icono"></i> APLICACIÓN DE BLUE POWER</li>
+            <li><i class="fa-solid fa-shield icono"></i> APLICACIÓN DE TEFLÓN</li>
+            <li><i class="fa-solid fa-engine-warning icono"></i> LAVADO DE MOTOR</li>
+            <li><i class="fa-solid fa-couch icono"></i> LAVADO DE VESTIDURAS</li>
+            <li><i class="fa-solid fa-hand-sparkles icono"></i> PULIDO Y ENCERADO</li>
+            <li><i class="fa-solid fa-lightbulb icono"></i> PULIDO DE FAROS</li>
+            <li><i class="fa-solid fa-spray-can icono"></i> DESCONTAMINACIÓN DE PINTURA</li>
+        </ul>
+    </div>
+
+    <div class="whatsapp">
+        <a href="https://wa.me/message/6QEHMGBC7TCLK1" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Contáctanos por WhatsApp
+        </a>
+    </div>
+
+</div>
+
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/521TU_NUMERO" class="btn-wsp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<footer>
+    <p>© 2026 Autolavado El Gato Espumoso</p>
+</footer>
+
+</body>
+</html>
